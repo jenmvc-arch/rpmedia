@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ee292e">
+  <title>RED POINT SDN. BHD. - Your story deserves to be seen.</title>
+  <meta name="description" content="Red Point 取传统媒体的严谨与判断，融入新媒体的速度、创意与平台语言，为马来西亚品牌塑造更清晰的形象。">
+  <meta property="og:title" content="RED POINT SDN. BHD. - Your story deserves to be seen.">
+  <meta property="og:description" content="Rooted in Kuching. Built for Malaysia. Media judgment, creative production and platform-native storytelling.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script>
+    (() => {
+      let mode;
+      try { mode = localStorage.getItem('redpoint-theme'); } catch {}
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(mode)
+        ? mode
+        : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css?v=media-overview-r1">
+</head>
+<body>
+  <canvas id="cosmic-field" class="cosmic-field" aria-hidden="true"></canvas>
+  <div class="cosmic-traveller" aria-hidden="true">
+    <span class="traveller-ring ring-a"></span>
+    <span class="traveller-ring ring-b"></span>
+    <span class="traveller-planet"></span>
+    <span class="traveller-moon"></span>
+  </div>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip" href="#main"><span data-zh="跳至正文">Skip to content</span></a>
+
+  <header>
+    <a class="logo" href="#top" aria-label="Red Point home">
+      <img src="assets/site-redpoint.webp" alt="Red Point Sdn. Bhd." width="1000" height="333">
+    </a>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#about"><span data-zh="关于我们">About us</span></a>
+      <a href="#brands"><span data-zh="旗下品牌">Our brands</span></a>
+      <a href="#services"><span data-zh="核心业务">What we do</span></a>
+      <a class="nav-contact" href="#contact"><span data-zh="联系合作">Let us talk</span> <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="header-controls">
+      <div class="site-preferences" aria-label="Display and language settings">
+        <button type="button" class="preference-button theme-button" id="theme-toggle" aria-label="Switch theme" aria-pressed="false">
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 1 1 8.8 4a7 7 0 0 0 11.2 11.2Z"/></svg>
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        </button>
+        <span class="preference-divider" aria-hidden="true"></span>
+        <button type="button" class="preference-button language-button" id="language-toggle" lang="en">EN</button>
+      </div>
+      <button class="menu" aria-expanded="false" aria-controls="nav"><span data-zh="菜单">Menu</span> ☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge"><i></i> MALAYSIA'S MEDIA &amp; CREATIVE GROUP</div>
+          <h1 id="hero-title">
+            <span data-zh="以故事连接世界，">Connecting Stories.</span><br>
+            <em data-zh="以传播创造影响">Creating Impact.</em>
+          </h1>
+          <h2 data-zh="连接资讯与创意，让好故事抵达更远">Connecting insight and creativity, taking good stories further.</h2>
+          <p class="hero-intro">
+            <span data-zh="从新闻现场到创意镜头，从本地视角到多元受众，Red Point 融合传统媒体的专业判断与新媒体的敏捷表达，以贴合平台的创意内容，为马来西亚品牌塑造清晰鲜明的形象，也让每一个值得被看见的故事，抵达真正重要的人，创造更大的影响。">From the newsroom to the creative lens, from local perspectives to diverse audiences, Red Point combines the professional judgment of traditional media with the agility of new media. Through platform-native creative content, we help Malaysian brands build clear, distinctive identities and carry every story worth seeing to the people who matter, creating greater impact.</span>
+            <strong class="hero-principle" data-zh="传统媒体的判断力，新媒体的表达力，让每一个好故事都拥有更大的可能。">The judgment of traditional media. The expressive power of new media. Greater possibilities for every good story.</strong>
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#stories"><span data-zh="探索精选内容">Explore our stories</span> <span>↗</span></a>
+            <a class="button secondary" href="#contact"><span data-zh="开启合作">Work with us</span> <span>→</span></a>
+          </div>
+          <div class="hero-tags">
+            <span data-zh="华文与英文资讯">Chinese &amp; English media</span>
+            <span data-zh="品牌视觉与创意制作">Brand visuals &amp; production</span>
+            <span data-zh="汽车与科技内容">Automotive &amp; technology</span>
+          </div>
+        </div>
+
+        <div class="brand-universe" aria-label="Red Point brand universe">
+          <svg class="network-map" viewBox="0 0 500 500" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="network-glow"><stop offset="0" stop-color="#ff536a" stop-opacity=".3"/><stop offset="1" stop-color="#ff536a" stop-opacity="0"/></radialGradient>
+              <linearGradient id="network-line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f05c7a" stop-opacity=".15"/><stop offset=".5" stop-color="#fa8295" stop-opacity=".65"/><stop offset="1" stop-color="#879cd0" stop-opacity=".2"/></linearGradient>
+            </defs>
+            <ellipse cx="250" cy="250" rx="185" ry="155" fill="url(#network-glow)"/>
+            <g class="network-links" fill="none" stroke="url(#network-line)" stroke-width="1">
+              <path d="M130 140 Q170 215 250 250 Q330 210 375 145"/><path d="M125 365 Q175 280 250 250 Q325 290 375 365"/><path d="M130 140 Q250 75 375 145 Q440 250 375 365 Q250 425 125 365 Q65 250 130 140Z"/><path d="M60 210 L130 140 L210 85 M375 145 L450 225 L375 365 L300 435 M125 365 L55 300"/>
+            </g>
+            <g class="network-signal" fill="none" stroke="#ff7f94" stroke-width="1.5" stroke-dasharray="3 160"><path d="M130 140 Q170 215 250 250 Q325 290 375 365"/><path d="M375 145 Q330 210 250 250 Q175 280 125 365"/></g>
+            <g class="network-nodes" fill="#e68598"><circle cx="60" cy="210" r="2.5"/><circle cx="210" cy="85" r="2"/><circle cx="450" cy="225" r="2.5"/><circle cx="300" cy="435" r="2"/><circle cx="55" cy="300" r="2"/><circle cx="250" cy="250" r="3"/></g>
+          </svg>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="universe-label">ONE GROUP. MANY POSSIBILITIES.</div>
+          <div class="universe-core"><img src="assets/site-redpoint.webp" alt="Red Point Sdn. Bhd."><span>CONTENT CONNECTS US.</span></div>
+          <a class="universe-brand ub-one" href="#reddot"><img src="assets/site-reddot.webp" alt="RedDot"><span data-zh="01 / 华文资讯 ↗">01 / CHINESE MEDIA ↗</span></a>
+          <a class="universe-brand ub-two" href="#redit"><img src="assets/site-redit.webp" alt="RED it"><span data-zh="02 / 创意制作 ↗">02 / CREATIVE ↗</span></a>
+          <a class="universe-brand ub-three" href="#redping"><img src="assets/site-redping.webp" alt="RedPing!"><span data-zh="03 / 英文资讯 ↗">03 / ENGLISH MEDIA ↗</span></a>
+          <a class="universe-brand ub-four" href="#shiftfocus"><img src="assets/site-shiftfocus.webp" alt="ShiftFocus"><span data-zh="04 / 汽车科技 ↗">04 / AUTO &amp; TECH ↗</span></a>
+          <div class="universe-location"><span class="live-dot"></span> ROOTED IN KUCHING. BUILT FOR MALAYSIA.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">01 / ABOUT US <span data-zh="关于我们">Our purpose</span></div>
+      <div class="about-grid">
+        <h2>
+          <span data-zh="我们不制造更多噪音，">We do not add to the noise.</span><br>
+          <span data-zh="我们让值得被认识的品牌，">We give worthy brands</span><br>
+          <em data-zh="拥有更好的表达。">a stronger voice.</em>
+        </h2>
+        <div class="prose">
+          <p class="lead" data-zh="媒体应保有判断与责任，也必须不断进化表达方式。">Media should keep its judgment and responsibility, while continually evolving how it communicates.</p>
+          <p data-zh="Red Point Sdn Bhd 于 2023 年创立于砂拉越古晋。我们的初衷，是取传统媒体的精华，融合新媒体的速度、视觉语言与平台思维，为马来西亚商家与品牌建立更清晰、更具辨识度的形象。">Red Point Sdn Bhd was founded in Kuching, Sarawak in 2023. We began with a clear purpose: to combine the strengths of traditional media with the speed, visual language and platform thinking of new media, helping Malaysian businesses build clearer and more distinctive brands.</p>
+          <p data-zh="从新闻编辑、数字出版到商业摄影、视频与社交内容，我们不只追求被看见，更重视内容是否被理解、被记住，并在合适的人群中产生真实连接。">From editorial publishing and digital media to commercial photography, video and social content, our work is not only about visibility. It is about being understood, remembered and meaningfully connected with the right audience.</p>
+          <p data-zh="旗下四个品牌分别服务不同语言、兴趣与内容场景，却共享同一信念：每一个值得被认识的故事，都应该以更好的方式被呈现。">Our four brands serve different languages, interests and content contexts, but share one belief: every story worth knowing deserves a better way to be told.</p>
+        </div>
+      </div>
+      <div class="facts facts-four">
+        <div><strong>2023</strong><span data-zh="创立于砂拉越古晋">Founded in Kuching, Sarawak</span></div>
+        <div><strong>15</strong><span data-zh="团队成员，截至 2025 年">Team members by 2025</span></div>
+        <div><strong>04</strong><span data-zh="媒体与创意品牌">Media and creative brands</span></div>
+        <div><strong>MY</strong><span data-zh="从古晋走向全马">From Kuching to Malaysia</span></div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-label">02 / OUR JOURNEY <span data-zh="我们的发展历程">Our growth story</span></div>
+      <h2><span data-zh="从古晋的一处起点，">From one starting point in Kuching,</span><br><span data-zh="走向全马的更多可能。">towards possibilities across Malaysia.</span></h2>
+      <div class="timeline">
+        <article><b>2023</b><h3 data-zh="从古晋出发">A beginning in Kuching</h3><p data-zh="Red Point Sdn Bhd 正式成立，以数字媒体与内容创作为起点；同年 RedDot 上线，以清楚、及时且贴近本地读者的华文资讯走进大众日常。">Red Point Sdn Bhd was established with digital media and content creation at its core. RedDot launched in the same year, bringing clear, timely Chinese-language information to local readers.</p></article>
+        <article><b class="timeline-range">2024-2025</b><h3 data-zh="从 3 人到 15 人">From three people to fifteen</h3><p data-zh="团队逐步扩张，能力从单一媒体平台延伸至英文资讯、生活内容、商业影像、社交短视频，以及汽车与科技垂直内容。">The team grew from three to fifteen, expanding from a single media platform into English news, lifestyle storytelling, commercial visuals, social video, automotive and technology content.</p></article>
+        <article><b>2026</b><h3 data-zh="立足古晋，走向更广">Beyond our home base</h3><p data-zh="在持续深耕砂拉越市场的同时，Red Point 正逐步拓展古晋以外的业务、客户与合作网络。">While continuing to deepen our work in Sarawak, Red Point is building business, client and partnership opportunities beyond Kuching.</p></article>
+        <article><b class="timeline-word">2027 TARGET</b><h3 data-zh="走向全马">Across Malaysia</h3><p data-zh="目标建立覆盖全马的业务与创意合作网络，让更多品牌从地方被看见，在全国被记住。">Our ambition is to grow a nationwide network of business and creative partnerships, helping more brands move from local relevance to national recognition.</p></article>
+      </div>
+    </section>
+
+    <section class="section stories" id="stories">
+      <div class="section-label">05 / SELECTED STORIES <span data-zh="精选内容">Work across our brands</span></div>
+      <div class="section-heading">
+        <h2><span data-zh="不同题材，">Different subjects.</span><br><span data-zh="同样值得被认真讲述。">The same commitment to telling them well.</span></h2>
+        <p data-zh="从一间老店的五十年味道，到一代车迷共同的梦想；四个品牌，以不同视角回应不同人群真正关心的事。">From a 50-year-old Kuching food tradition to the dream car of a generation, four brands turn different interests into stories people choose to watch, read and share.</p>
+      </div>
+      <div class="story-filters brand-filters" role="group" aria-label="Filter stories by brand">
+        <button class="active" type="button" data-story-filter="all" aria-pressed="true"><span data-zh="全部品牌">All brands</span> <span>12</span></button>
+        <button type="button" data-story-filter="redit" aria-pressed="false">RED it</button>
+        <button type="button" data-story-filter="shiftfocus" aria-pressed="false">ShiftFocus</button>
+        <button type="button" data-story-filter="reddot" aria-pressed="false">RedDot</button>
+        <button type="button" data-story-filter="redping" aria-pressed="false">RedPing!</button>
+      </div>
+      <p id="story-status" class="sr-only" role="status"></p>
+      <div class="story-grid">
+        <article class="story-card story-featured" data-brand="redit" data-rank="1">
+          <a class="story-media" href="https://www.instagram.com/redit.my/reel/DJGx2SnBsY-/" target="_blank" rel="noopener noreferrer"><img src="assets/redit-1.jpg" alt="古晋长春烧包传统美食故事"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RED it / <span data-zh="美食与生活内容">Food &amp; lifestyle</span></span><time datetime="2025-05-01">2025.05.01</time></div>
+          <h3 data-zh="五十年古晋味道，被新一代重新看见。">Fifty years of Kuching tradition, seen by a new generation.</h3>
+          <div class="story-result"><strong>857K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RED it 发布。播放数字核查于 2026 年 10 月 19 日。">Published by RED it. Displayed views checked 19 October 2026.</p>
+        </article>
+        <article class="story-card" data-brand="shiftfocus" data-rank="1">
+          <a class="story-media" href="https://www.instagram.com/shift_focus.my/reel/DP4CwV4DN2w/" target="_blank" rel="noopener noreferrer"><img src="assets/shiftfocus-1.jpg" alt="Nissan GT-R 创意影像"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>ShiftFocus / <span data-zh="合作内容">Collaboration</span></span><time datetime="2025-10-16">2025.10.16</time></div>
+          <h3 data-zh="一辆 GT-R，一代车迷共同的梦想。">A GT-R. A generation's shared dream.</h3>
+          <div class="story-result"><strong>668K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit">ShiftFocus x kokxiangg</p>
+        </article>
+        <article class="story-card" data-brand="reddot" data-rank="1">
+          <a class="story-media" href="https://www.instagram.com/reddot_my/reel/DQd0roKE1Ti/" target="_blank" rel="noopener noreferrer"><img src="assets/reddot-1.jpg" alt="公共事务与媒体议题报道"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedDot / <span data-zh="华文资讯">Chinese media</span></span><time datetime="2025-10-31">2025.10.31</time></div>
+          <h3 data-zh="把公共议题，放回本地读者的语境。">Public affairs, placed in a local reader's context.</h3>
+          <div class="story-result"><strong>52.3K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RedDot 发布的资讯内容。">Editorial content published by RedDot.</p>
+        </article>
+        <article class="story-card" data-brand="redping" data-rank="1">
+          <a class="story-media" href="https://www.instagram.com/redping.my/reel/Dd8zkcbAdkE/" target="_blank" rel="noopener noreferrer"><img src="assets/redping-1.jpg" alt="航空事件英文资讯短片"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedPing! / <span data-zh="英文资讯">English media</span></span><time datetime="2026-10-01">2026.10.01</time></div>
+          <h3 data-zh="以短视频语言，快速梳理航空资讯。">Aviation news, made clear for a social-first audience.</h3>
+          <div class="story-result"><strong>372</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RedPing! 发布的英文资讯。">English-language editorial content by RedPing!</p>
+        </article>
+        <article class="story-card" data-brand="redit" data-rank="2" hidden>
+          <a class="story-media" href="https://www.instagram.com/redit.my/reel/DPn3WKAgaVk/" target="_blank" rel="noopener noreferrer"><img src="assets/redit-2.jpg" alt="95 Chicken Pie 家族美食故事"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RED it / <span data-zh="合作内容">Collaboration</span></span><time datetime="2025-10-10">2025.10.10</time></div>
+          <h3 data-zh="一份家族味道，也是一段可以被记住的品牌故事。">A family recipe, shaped into a story worth remembering.</h3>
+          <div class="story-result"><strong>693K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit">RED it x kuqing95bakery</p>
+        </article>
+        <article class="story-card" data-brand="shiftfocus" data-rank="2" hidden>
+          <a class="story-media" href="https://www.instagram.com/shift_focus.my/reel/DVAc-X2DMZF/" target="_blank" rel="noopener noreferrer"><img src="assets/shiftfocus-2.jpg" alt="Fastcult 2026 汽车活动"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>ShiftFocus / <span data-zh="活动内容">Event content</span></span><time datetime="2026-02-21">2026.02.21</time></div>
+          <h3 data-zh="让汽车文化的速度、声音与现场感留在镜头里。">The speed, sound and atmosphere of automotive culture, kept in motion.</h3>
+          <div class="story-result"><strong>389K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="合作发布，完整署名请见原帖。">Collaborative post; full credits on Instagram.</p>
+        </article>
+        <article class="story-card" data-brand="reddot" data-rank="2" hidden>
+          <a class="story-media" href="https://www.instagram.com/reddot_my/reel/DYRUG1HT2ZJ/" target="_blank" rel="noopener noreferrer"><img src="assets/reddot-2.jpg" alt="Pocong 网络话题"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedDot / <span data-zh="华文资讯">Chinese media</span></span><time datetime="2026-05-13">2026.05.13</time></div>
+          <h3 data-zh="当网络话题发酵，报道仍需保留事实边界。">When a story goes viral, responsible context still matters.</h3>
+          <div class="story-result"><strong>37.7K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="保留“疑似”语境，不将传闻写成事实。">Published with qualifying context; a claim is not presented as fact.</p>
+        </article>
+        <article class="story-card" data-brand="redping" data-rank="2" hidden>
+          <a class="story-media" href="https://www.instagram.com/redping.my/reel/DNiBju6onm7/" target="_blank" rel="noopener noreferrer"><img src="assets/redping-2.jpg" alt="水族馆事件英文资讯"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedPing! / <span data-zh="英文资讯">English media</span></span><time datetime="2025-08-19">2025.08.19</time></div>
+          <h3 data-zh="把复杂事件整理成清楚、可快速理解的资讯。">A complex incident distilled into clear, accessible information.</h3>
+          <div class="story-result"><strong>369</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RedPing! 发布的英文资讯。">English-language editorial content by RedPing!</p>
+        </article>
+        <article class="story-card" data-brand="redit" data-rank="3" hidden>
+          <a class="story-media" href="https://www.instagram.com/redit.my/reel/DYliexBzuBp/" target="_blank" rel="noopener noreferrer"><img src="assets/redit-3.jpg" alt="Batang Lupar 大桥生活资讯"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RED it / <span data-zh="地方生活">Local life</span></span><time datetime="2026-05-21">2026.05.21</time></div>
+          <h3 data-zh="一座桥，也可以连接地方生活与更广的目光。">A bridge connecting local life with a wider audience.</h3>
+          <div class="story-result"><strong>674K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RED it 发布，以原帖日期语境呈现。">Published by RED it in its original date context.</p>
+        </article>
+        <article class="story-card" data-brand="shiftfocus" data-rank="3" hidden>
+          <a class="story-media" href="https://www.instagram.com/shift_focus.my/reel/DSeHCnbCVkZ/" target="_blank" rel="noopener noreferrer"><img src="assets/shiftfocus-3.jpg" alt="Kobe 主题 Nissan GT-R"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>ShiftFocus / <span data-zh="合作内容">Collaboration</span></span><time datetime="2025-12-20">2025.12.20</time></div>
+          <h3 data-zh="传奇不只被纪念，也被重新设计与呈现。">A legend remembered through automotive design and visual culture.</h3>
+          <div class="story-result"><strong>368K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit">Unique Garage original / ShiftFocus collaboration</p>
+        </article>
+        <article class="story-card" data-brand="reddot" data-rank="3" hidden>
+          <a class="story-media" href="https://www.instagram.com/reddot_my/reel/DQqvmgTExu7/" target="_blank" rel="noopener noreferrer"><img src="assets/reddot-3.jpg" alt="娱乐人物新闻更新"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedDot / <span data-zh="娱乐资讯">Entertainment</span></span><time datetime="2025-11-05">2025.11.05</time></div>
+          <h3 data-zh="让快速变化的娱乐资讯，保持清楚的叙事。">Fast-moving entertainment news, kept clear and readable.</h3>
+          <div class="story-result"><strong>28.6K</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RedDot 发布，以原帖当时报道语境呈现。">Published by RedDot in its original reporting context.</p>
+        </article>
+        <article class="story-card" data-brand="redping" data-rank="3" hidden>
+          <a class="story-media" href="https://www.instagram.com/redping.my/reel/DQoTNkUDiC6/" target="_blank" rel="noopener noreferrer"><img src="assets/redping-3.jpg" alt="社会事件英文资讯"><span class="story-action"><span data-zh="前往 Instagram 观看">Watch on Instagram</span> ↗</span></a>
+          <div class="story-meta"><span>RedPing! / <span data-zh="英文资讯">English media</span></span><time datetime="2025-11-04">2025.11.04</time></div>
+          <h3 data-zh="用英语视角，让本地与国际事件抵达更多读者。">An English-language lens connecting local and global developments.</h3>
+          <div class="story-result"><strong>329</strong><span data-zh="Instagram 页面显示播放次数">Instagram displayed views</span></div>
+          <p class="story-credit" data-zh="RedPing! 发布，不将原帖事件当作最新结论。">Published by RedPing! without presenting the dated report as a current conclusion.</p>
+        </article>
+      </div>
+      <div class="stories-footer">
+        <button id="show-stories" class="brand-link story-toggle" type="button" aria-expanded="false"><span data-zh="查看全部 12 条精选">View all 12 stories</span> <span aria-hidden="true">↘</span></button>
+        <details class="source-note"><summary data-zh="关于数据与内容署名">About figures and content credits</summary><p data-zh="以上为已核查 Reels 中的高播放精选，并非完整历史排名。公开播放次数不等同独立触达、商业成果或原创制作证明；合作与制作署名以原帖为准。">These are high-view selections among reviewed Reels, not a verified all-time ranking. Public view counts do not establish unique reach, business outcomes or original production; collaborative credits remain with the linked posts.</p></details>
+      </div>
+    </section>
+    <section class="section brands" id="brands">
+      <div class="section-label">03 / OUR BRANDS <span data-zh="旗下品牌">Four distinct perspectives</span></div>
+      <div class="section-heading"><h2>Four Brands.<br>Different Perspectives.<br><em>One Vision.</em></h2><p data-zh="服务不同语言、兴趣与内容场景，共同让好故事找到对的人。">Serving different languages, interests and content contexts, with one purpose: bringing good stories to the right people.</p></div>
+      <div class="brand-filters" role="group" aria-label="Filter brands"><button class="active" type="button" data-filter="all" aria-pressed="true"><span data-zh="全部品牌">All brands</span> <span>04</span></button><button type="button" data-filter="news" aria-pressed="false"><span data-zh="新闻与资讯">News &amp; information</span></button><button type="button" data-filter="creative" aria-pressed="false"><span data-zh="创意与生活">Creative &amp; lifestyle</span></button><button type="button" data-filter="tech" aria-pressed="false"><span data-zh="汽车与科技">Automotive &amp; tech</span></button></div>
+      <p id="filter-status" class="sr-only" role="status"></p>
+      <article class="brand" data-category="news" id="reddot"><div class="brand-art"><span class="index">01 / OUR BRANDS</span><img src="assets/site-reddot.webp" alt="RedDot Logo" loading="lazy"></div><div class="brand-copy"><div class="eyebrow" data-zh="华文数字新闻平台">Chinese digital media</div><h3>RedDot</h3><p data-zh="RedDot 面向马来西亚华文读者，把分散、复杂与快速变化的资讯，重新梳理成清楚、直接且容易理解的内容。">RedDot serves Chinese-language readers in Malaysia by turning fragmented, complex and fast-moving developments into clear, direct and accessible information.</p><p data-zh="从国内外时事、公共议题与财经，到娱乐和生活动态，我们以本地读者的语境判断什么值得关注，也重视资讯的准确性、脉络与公共价值。">From current affairs, public issues and business to entertainment and everyday life, its editorial lens is grounded in local context, accuracy and public relevance.</p><a class="brand-link" href="https://reddot.my" target="_blank" rel="noopener noreferrer"><span data-zh="探索品牌">Explore</span> · reddot.my <span aria-hidden="true">↗</span></a><div class="social"><a href="https://www.instagram.com/reddot_my/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@reddot_my" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.facebook.com/reddothongdian" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://xhslink.cn/m/1saagKTSW49" target="_blank" rel="noopener noreferrer"><span data-zh="小红书">RedNote</span> ↗</a></div></div></article>
+      <article class="brand" data-category="creative" id="redit"><div class="brand-art"><span class="index">02 / OUR BRANDS</span><img src="assets/site-redit.webp" alt="RED it Logo" loading="lazy"></div><div class="brand-copy"><div class="eyebrow" data-zh="创意制作与生活内容">Creative production &amp; lifestyle</div><h3>RED it</h3><p data-zh="RED it 从美食与生活出发，把地方味道、人物与空间转化为有温度的视觉故事，同时为品牌提供商业摄影、视频及社交媒体内容制作。">RED it begins with food and everyday life, turning local flavours, people and places into warm visual stories while producing commercial photography, video and social content for brands.</p><p data-zh="服务场景涵盖餐饮、零售、酒店与商业空间、活动以及创作者合作，让品牌不仅拥有好看的画面，也拥有更清楚的表达。">Its work spans food and beverage, retail, hospitality, commercial spaces, events and creator collaborations, giving brands both stronger visuals and a clearer voice.</p><a class="brand-link" href="https://redit.my" target="_blank" rel="noopener noreferrer"><span data-zh="探索品牌">Explore</span> · redit.my <span aria-hidden="true">↗</span></a><div class="social"><a href="https://www.instagram.com/redit.my" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@redit_my" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.facebook.com/share/19Ucwy284A/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://xhslink.cn/m/AfBvSyuK3FI" target="_blank" rel="noopener noreferrer"><span data-zh="小红书">RedNote</span> ↗</a></div></div></article>
+      <article class="brand" data-category="news" id="redping"><div class="brand-art"><span class="index">03 / OUR BRANDS</span><img src="assets/site-redping.webp" alt="RedPing! Logo" loading="lazy"></div><div class="brand-copy"><div class="eyebrow" data-zh="英文数字新闻平台">English digital media</div><h3>RedPing!</h3><p data-zh="RedPing! 以英语连接关注马来西亚与世界的读者，报道国内外事件、社会、文化、娱乐、生活与科技动态。">RedPing! connects English-language readers with developments in Malaysia and beyond, covering current affairs, society, culture, entertainment, lifestyle and technology.</p><p data-zh="通过网络文章与社交短视频，平台以适合数字阅读的节奏，把重要资讯带到更广的英语受众面前。">Through online articles and social-first video, it brings relevant information to a wider English-speaking audience in a format designed for digital reading.</p><a class="brand-link" href="https://redping.my" target="_blank" rel="noopener noreferrer"><span data-zh="探索品牌">Explore</span> · redping.my <span aria-hidden="true">↗</span></a><div class="social"><a href="https://www.instagram.com/redping.my" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@redping.my" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.facebook.com/share/14sjcoLbZ9G/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div></article>
+      <article class="brand" data-category="tech" id="shiftfocus"><div class="brand-art"><span class="index">04 / OUR BRANDS</span><img src="assets/site-shiftfocus.webp" alt="ShiftFocus Logo" loading="lazy"></div><div class="brand-copy"><div class="eyebrow" data-zh="汽车与科技资讯平台">Automotive &amp; technology media</div><h3>ShiftFocus</h3><p data-zh="ShiftFocus 聚焦汽车、移动科技、智能设备与数字产品，为重视性能、设计与创新的读者提供新闻、产品介绍与评测内容。">ShiftFocus covers cars, mobility, smart devices and digital products for audiences interested in performance, design and innovation through news, explainers and reviews.</p><p data-zh="从新车与改装文化，到科技如何改变出行与生活，平台以专业兴趣为起点，让垂直内容找到真正关心它的人。">From new vehicles and tuning culture to the technologies changing mobility and everyday life, it connects specialist subjects with the audiences who care about them.</p><a class="brand-link" href="https://shiftfocus.my" target="_blank" rel="noopener noreferrer"><span data-zh="探索品牌">Explore</span> · shiftfocus.my <span aria-hidden="true">↗</span></a><div class="social"><a href="https://www.instagram.com/shift_focus.my" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@shift_focus.my" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://www.facebook.com/share/19cLAeAQ2h/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div></article>
+    </section>
+    <section class="section services" id="services">
+      <div class="section-label">04 / WHAT WE DO <span data-zh="核心业务">Capabilities</span></div>
+      <h2><span data-zh="从判断什么值得说，">From deciding what matters,</span><br><span data-zh="到找到最适合的表达。">to finding the right way to say it.</span></h2>
+      <div class="service-grid">
+        <article><span>01</span><h3>Editorial &amp; Digital Publishing</h3><h4 data-zh="编辑与数字出版">Editorial judgment before distribution</h4><p data-zh="经营不同语言及垂直定位的媒体平台，以清楚的编辑判断整理新闻、资讯与专题内容。">We operate media platforms across languages and specialist interests, applying clear editorial judgment to news, information and feature content.</p><a class="service-cta" href="#contact" data-kind="collaboration"><span data-zh="洽谈合作">Discuss a collaboration</span> <span>↗</span></a></article>
+        <article><span>02</span><h3>Brand Storytelling &amp; Production</h3><h4 data-zh="品牌叙事与创意制作">Ideas shaped into visual stories</h4><p data-zh="从创意构思到商业摄影、品牌视频与短视频制作，让品牌拥有一致而鲜明的视觉表达。">From creative direction to commercial photography, brand video and short-form production, we give brands a distinctive and consistent visual voice.</p><a class="service-cta" href="#contact" data-kind="business"><span data-zh="讨论制作需求">Discuss production</span> <span>↗</span></a></article>
+        <article><span>03</span><h3>Social-first Content</h3><h4 data-zh="为平台而生的内容">Made for the platform, not merely resized</h4><p data-zh="不是把同一份内容重复发布，而是根据平台、受众与观看习惯，重新组织文字、图片与视频。">We do not simply repost the same material. Words, images and video are reshaped around each platform, audience and viewing behaviour.</p><a class="service-cta" href="#contact" data-kind="business"><span data-zh="聊聊品牌内容">Talk brand content</span> <span>↗</span></a></article>
+        <article><span>04</span><h3>Media &amp; Partnership Solutions</h3><h4 data-zh="媒体与合作方案">The right voice for the right audience</h4><p data-zh="结合华文、英文、生活方式及汽车科技品牌，为企业、代理商与内容伙伴规划合适的合作形式。">We bring together Chinese, English, lifestyle and automotive-tech perspectives to shape suitable collaborations for businesses, agencies and content partners.</p><a class="service-cta" href="#contact" data-kind="agency"><span data-zh="探索合作方向">Explore the fit</span> <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="section partnership" id="work-with-us">
+      <div class="section-label">06 / LET'S MAKE IT HAPPEN <span data-zh="找到适合你的合作方向">Find the right way to work together</span></div>
+      <div class="partnership-heading"><h2><span data-zh="你的故事，">Your story.</span><br><span data-zh="值得被认真呈现。">Thoughtfully told.</span></h2><p data-zh="从品牌传播到视觉制作，根据你的目标、受众与市场，选择合适的平台和内容形式。">From brand communication to visual production, find the platform and content format that fit your audience, market and objectives.</p></div>
+      <div class="partner-grid">
+        <a href="#contact" data-kind="business"><span data-zh="FOR BRANDS / 企业与品牌">FOR BRANDS</span><h3 data-zh="让品牌不只被看见，也被理解。">Be seen. Then be understood.</h3><p data-zh="品牌内容、商业影像、社交媒体与整合传播咨询。">Brand content, commercial visuals, social media and integrated communication.</p><b><span data-zh="聊聊品牌推广">Talk brand growth</span> ↗</b></a>
+        <a href="#contact" data-kind="collaboration"><span data-zh="FOR STORIES / 内容与媒体">FOR STORIES</span><h3 data-zh="把值得说的事，变成有人愿意听的故事。">Turn something worth saying into something worth hearing.</h3><p data-zh="编辑内容、专题、跨品牌故事与媒体合作。">Editorial content, features, cross-brand stories and media collaboration.</p><b><span data-zh="讨论内容合作">Discuss content</span> ↗</b></a>
+        <a href="#contact" data-kind="agency"><span data-zh="FOR PARTNERS / 代理商与伙伴">FOR PARTNERS</span><h3 data-zh="让简报找到合适的品牌、受众与形式。">Match the brief with the right brand, audience and format.</h3><p data-zh="客户简报、制作范围、媒体资源与长期合作网络。">Client briefs, production scope, media opportunities and long-term partnerships.</p><b><span data-zh="探索合作方式">Explore partnership</span> ↗</b></a>
+      </div>
+      <div class="media-kit-panel"><div><span>RED POINT / MEDIA OVERVIEW</span><h3 data-zh="四个品牌，一份更清楚的合作起点。">Four brands. One clearer starting point.</h3><p data-zh="品牌定位、内容兴趣、服务形式、精选内容与咨询准备，一次了解。">Brand positioning, content interests, service formats, selected work and enquiry guidance in one place.</p></div></div>
+    </section>
+
+    <section class="section vision">
+      <div class="section-label">07 / OUR VISION <span data-zh="企业愿景">Where we are going</span></div>
+      <h2>Making brands<br><em>understood,</em><br>not merely noticed.</h2>
+      <div class="vision-copy"><p class="lead" data-zh="让品牌被理解，而不只是被看见。">To make brands understood, not merely noticed.</p><p data-zh="我们相信，真正有效的内容不只传递资讯，也建立信任、辨识度与长期连接。Red Point 将继续结合编辑判断、技术与视觉创意，让地方品牌拥有走向更大市场的表达能力。">We believe effective content does more than distribute information. It builds trust, recognition and lasting connection. Red Point will continue bringing together editorial judgment, technology and visual creativity so local brands can speak confidently to larger markets.</p><p data-zh="从古晋出发，我们希望成为连接全马品牌、内容与受众的新一代媒体与创意力量。">From Kuching, our vision is to become a new-generation media and creative collective connecting brands, content and audiences across Malaysia.</p></div>
+    </section>
+
+    <section class="section careers" id="careers">
+      <div class="section-label">08 / CAREERS <span data-zh="加入我们">Grow with the story</span></div>
+      <div class="career-grid"><div class="career-poster" aria-hidden="true"><div class="career-kicker">RED POINT / CREATIVE ENERGY</div><strong>YOUNG<br>MINDS.<br><em>BIG</em><br>IDEAS.</strong><span>THINK. CREATE. CONNECT.</span></div><div class="career-copy"><h2><span data-zh="从 3 人到 15 人，">From three people to fifteen.</span><br><em data-zh="下一章，欢迎你一起写。">The next chapter could include you.</em></h2><p class="lead" data-zh="我们正在认识对内容有判断、对创意有要求，也愿意持续学习的人。">We want to meet people with editorial judgment, creative standards and the willingness to keep learning.</p><p data-zh="如果你喜欢问问题、讲故事、拍摄剪辑、设计视觉，或帮助品牌与受众建立连接，欢迎介绍自己与作品。">If you enjoy asking questions, telling stories, filming, editing, designing or helping brands connect with audiences, introduce yourself and your work.</p><div class="career-tags"><span data-zh="编辑与内容">Editorial &amp; content</span><span data-zh="视频与设计">Video &amp; design</span><span data-zh="商务与合作">Business &amp; partnerships</span></div><p class="career-note" data-zh="目前开放人才自荐；以上为团队发展方向，不代表正在招聘的具体职位。我们会在出现合适机会时与你联系。">Talent introductions are welcome. These are areas of interest, not advertised vacancies. We will reach out when a relevant opportunity becomes available.</p><a class="button primary" href="#contact" data-kind="careers"><span data-zh="介绍一下自己">Introduce yourself</span> ↗</a></div></div>
+    </section>
+
+    <section class="section faq">
+      <div class="faq-heading"><div class="section-label">09 / GOOD TO KNOW <span data-zh="合作前，你可能想知道">Before we connect</span></div><h2><span data-zh="从一个问题，">A useful question.</span><br><span data-zh="开始一次更好的合作。">A stronger collaboration.</span></h2><a href="mailto:contact@redpointmedia.my"><span data-zh="还有其他问题？联系团队">More questions? Contact the team</span> ↗</a></div>
+      <div class="faq-list">
+        <details><summary><span data-zh="四个品牌分别适合什么内容？">What does each brand focus on?</span><span>＋</span></summary><p data-zh="RedDot 聚焦华文资讯；RedPing! 面向英语读者；RED it 结合美食生活内容与商业视觉制作；ShiftFocus 聚焦汽车与科技。我们会根据受众、目标和内容形式推荐合适品牌。">RedDot focuses on Chinese-language information; RedPing! serves English readers; RED it combines food and lifestyle storytelling with commercial visual production; ShiftFocus covers automotive and technology. We recommend the right fit based on your audience, objective and format.</p></details>
+        <details><summary><span data-zh="可以跨品牌合作吗？">Can a project involve more than one brand?</span><span>＋</span></summary><p data-zh="可以。告诉我们希望接触的受众、项目目标与内容形式，我们会讨论适合的品牌组合、分工与发布方式。">Yes. Share the audience you want to reach, your objectives and preferred formats, and we can discuss a suitable mix of brands, responsibilities and distribution.</p></details>
+        <details><summary><span data-zh="能保证爆款或固定流量吗？">Do you guarantee viral content or fixed reach?</span><span>＋</span></summary><p data-zh="我们不预设流量保证。传播效果受内容、平台、受众、时机与投放条件影响；交付内容、目标和统计方式会在项目方案中确认。">We do not make blanket reach guarantees. Results depend on the content, platform, audience, timing and distribution. Deliverables, objectives and measurement are agreed in the project brief.</p></details>
+        <details><summary><span data-zh="首次咨询要准备什么？">What should I include in my first enquiry?</span><span>＋</span></summary><p data-zh="建议提供品牌或公司简介、目标受众、项目目标、预计时间与预算范围。尚未确定也没关系，一项初步想法就足以开始讨论。">A short company or brand introduction, target audience, objective, timing and budget range are helpful. If these are not final, an early idea is enough to begin.</p></details>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-label">10 / CONTACT US <span data-zh="联系合作">Start a conversation</span></div>
+      <h2>Let's Connect &amp; Create<br>Something <em>Meaningful.</em></h2>
+      <p class="contact-intro" data-zh="品牌推广、内容创作、媒体合作、代理咨询或人才自荐，都可以从一句 Hello 开始。告诉我们你想抵达谁、希望解决什么，以及你正在构想的下一步。">Brand promotion, creative production, media partnerships, agency enquiries or talent introductions can all begin with a simple hello. Tell us who you want to reach, what you want to solve and what you are imagining next.</p>
+      <div class="contact-grid"><div class="contact-details"><h3>RED POINT SDN. BHD.</h3><p>Company Registration No.<br>202301040351 (1534270-P)<br>Established in 2023</p><h4 data-zh="公司总部">Corporate headquarters</h4><address>No. 181, 1st Floor,<br>Hui Sing Garden Commercial Centre,<br>Taman Hui Sing, 93350 Kuching,<br>Sarawak, Malaysia.</address><h4 data-zh="企业联络电邮">General enquiries</h4><a href="mailto:contact@redpointmedia.my">contact@redpointmedia.my ↗</a><h4 data-zh="办公室电话">Office telephone</h4><a href="tel:+6082450034">+60 82-450034</a><h4 data-zh="手机／业务联络">Mobile / business enquiries</h4><a href="tel:+601168680001">+60 11-6868 0001</a><br><a href="tel:+601168680002">+60 11-6868 0002</a><div class="contact-actions"><a href="https://wa.me/601168680001" target="_blank" rel="noopener noreferrer">WhatsApp 01 ↗</a><a href="https://wa.me/601168680002" target="_blank" rel="noopener noreferrer">WhatsApp 02 ↗</a></div></div>
+        <form id="contact-form" novalidate><h3>SEND US A MESSAGE <span data-zh="在线留言">Online enquiry</span></h3><p data-zh="选择咨询方向，再把你的品牌、受众与目标告诉我们。">Choose an enquiry type, then tell us about your brand, audience and objective.</p><label class="full"><span data-zh="咨询类别 *">Enquiry type *</span><select name="kind" required><option value="business" data-zh="商务与品牌咨询">Business &amp; brand enquiry</option><option value="collaboration" data-zh="内容与媒体合作">Content &amp; media collaboration</option><option value="agency" data-zh="广告／媒体代理商">Advertising / media agency</option><option value="sales" data-zh="销售代理意向">Sales representation</option><option value="careers" data-zh="人才自荐">Talent introduction</option></select></label><p id="type-hint" class="type-hint" aria-live="polite"></p><div class="form-grid"><label><span data-zh="姓名 *">Your name *</span><input name="name" autocomplete="name" maxlength="100" required></label><label><span data-zh="电邮 *">Email address *</span><input name="email" type="email" autocomplete="email" maxlength="200" required></label><label class="full"><span data-zh="公司／品牌（选填）">Company / brand (optional)</span><input name="company" autocomplete="organization" maxlength="150"></label><label><span data-zh="意向品牌（选填）">Brand of interest (optional)</span><select name="brand"><option value="Open to recommendations" data-zh="欢迎推荐">Open to recommendations</option><option>RedDot</option><option>RED it</option><option>RedPing!</option><option>ShiftFocus</option><option value="Multiple brands" data-zh="跨品牌合作">Multiple brands</option></select></label><label><span data-zh="预计时间（选填）">Preferred timing (optional)</span><input name="timing" maxlength="120"></label><label class="full"><span data-zh="目标受众／市场（选填）">Audience / market (optional)</span><input name="audience" maxlength="200"></label><label class="full"><span data-zh="预算范围及币种（选填）">Budget range, with currency (optional)</span><input name="budget" maxlength="120"></label><label class="full"><span data-zh="告诉我们你的想法 *">Tell us about your idea *</span><textarea name="message" rows="5" maxlength="2000" required></textarea></label></div><p class="form-note" data-zh="此表格会整理内容并打开你的电邮应用，由你确认发送；网站不会储存资料。人才自荐可在邮件中附上简历与作品。">This prepares an email in your email app for you to review and send. This site does not store your details. For careers, attach your CV and portfolio in the email.</p><div class="form-submit-row"><button class="submit" type="submit"><span class="submit-label" data-zh="准备电邮">Prepare email</span><span>↗</span></button><button class="copy-enquiry" id="copy" type="button"><span data-zh="复制咨询内容">Copy enquiry</span></button></div><p id="form-status" role="status" aria-live="polite"></p><details id="enquiry-preview" hidden><summary data-zh="查看咨询草稿">Review enquiry draft</summary><pre id="draft-preview"></pre></details></form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div><img src="assets/site-redpoint.webp" alt="Red Point Sdn. Bhd." loading="lazy"><p>Connecting Stories. Creating Impact</p></div>
+      <div><span data-zh="探索旗下品牌">EXPLORE OUR BRANDS</span><div class="footer-brands"><a href="https://reddot.my" target="_blank" rel="noopener noreferrer">RedDot ↗</a><a href="https://redit.my" target="_blank" rel="noopener noreferrer">RED it ↗</a><a href="https://redping.my" target="_blank" rel="noopener noreferrer">RedPing! ↗</a><a href="https://shiftfocus.my" target="_blank" rel="noopener noreferrer">ShiftFocus ↗</a></div></div>
+      <a href="#top" class="back-top"><span data-zh="返回顶部">Back to top</span> ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© 2026 RED POINT SDN. BHD. ALL RIGHTS RESERVED.</span><span>KUCHING, SARAWAK, MALAYSIA</span></div>
+  </footer>
+  <script src="app.js?v=section-order-r1" defer></script>
+</body>
+</html>
