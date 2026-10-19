@@ -1,0 +1,13 @@
+{
+  "name": "red-point-media",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-cloudflare.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:dry-run": "npm run build && wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.1"
+  }
+}
